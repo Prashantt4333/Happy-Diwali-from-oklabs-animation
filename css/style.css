@@ -21,6 +21,7 @@ h2{
     font-size: 12vw;
     display: flex;
     color: transparent;
+   
 }
 
 h2 span{
@@ -62,4 +63,37 @@ h2 span{
 .ok{
     font-size: 30px;
     margin-top: 300px;
+}
+h3 {
+    font-size: 10px;
+    display: flex;
+    color: transparent;
+}
+h3 span {
+    animation: animatee 2s linear infinite;
+   
+}
+@keyframes animatee{
+    0%{
+        color: #fff;
+        filter: blur(0px) hue-rotate(0deg);
+        text-shadow: 0 0 10px #00ff55,
+        0 0 20px #00ff55,
+        0 0 40px #00ff55,
+        0 0 80px #00ff55;
+    }
+    30%,70%{
+        color: #fff;
+        filter: blur(0px) hue-rotate(180deg);
+        text-shadow: 0 0 10px #00ff55,
+        0 0 20px #00ff55,
+        0 0 40px #00ff55,
+        0 0 80px #00ff55;
+    }
+    100%{
+        color: transparent;
+        box-shadow: none;
+        filter: blur(1px) hue-rotate(0deg);
+
+    }
 }
